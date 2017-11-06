@@ -47,9 +47,91 @@
 <img src="img/diagram.jpg">
 </section>
 <section>
+<h3>Degree of Freedom</h3>
+<script type="math/tex; mode=display">
+F=3(N_{L}-1)-2J_{R}-2J_{P}
+</script>
+<hr/>
+<script type="math/tex; mode=display">
+J_{R}=7
+</script>
+<script type="math/tex; mode=display">
+J_{P}=4
+</script>
+<script type="math/tex; mode=display">
+F=3(9-1)-2\times7-2\times4=+2
+</script>
+</section>
+<section>
 <h3>Generalization</h3>
 <hr/>
 <img src="img/generalization.jpg">
+</section>
+</section>
+<section>
+<section>
+<h3>The Maximum Joint Number of Links</h3>
+<hr/>
+<script type="math/tex; mode=display">
+if(N_{L}\leq N_{J}\leq 2N_{L}-3)
+</script>
+<script type="math/tex; mode=display">
+m_{max}=N_{J}-N_{L}+2
+</script>
+<script type="math/tex; mode=display">
+N_{L}=9
+</script>
+<script type="math/tex; mode=display">
+N_{J}=11
+</script>
+<script type="math/tex; mode=display">
+m_{max}=11-9+2=4
+</script>
+</section>
+<section>
+<h3>Combinations</h3>
+<hr/>
+<script type="math/tex; mode=display">
+\sum_{m=2}^{m_{max}}N_{L_{m}}=9
+</script>
+<script type="math/tex; mode=display">
+\sum_{m=2}^{m_{max}}mN_{L_{m}}=2\times11
+</script>
+</section>
+<section>
+<h3>Calculation script</h3>
+<hr/>
+<pre class="python"><code style="max-height:500px;">from itertools import product
+
+class NumberSynthesis:
+    def __init__(self, NL, NJ):
+        self.NL = NL
+        self.NJ = NJ
+
+    @property
+    def Mmax(self):
+        if self.NL <= self.NJ and self.NJ <= (2*self.NL-3):
+            return self.NJ - self.NL + 2
+        elif (2*self.NL-3) <= self.NJ and self.NJ <= (self.NL*(self.NL-1)/2):
+            return self.NL - 1
+        else:
+            raise ValueError("incorrect number.")
+
+    @property
+    def NLm(self):
+        result = []
+        correction = lambda l: sum((i+2)*l[i] for i in range(len(l))) == 2*self.NJ
+        for symbols in product(range(self.NL+1), repeat=self.Mmax-2):
+            NLMmax = self.NL - sum(symbols)
+            answer = symbols+(NLMmax,)
+            if correction(answer) and NLMmax>=0:
+                result.append(answer)
+        return tuple(result)
+
+if __name__=='__main__':
+    a = NumberSynthesis(9, 11)
+    print(a.NLm) #((5, 4, 0), (6, 2, 1), (7, 0, 2))
+</code></pre>
 </section>
 </section>
 </div>
@@ -64,6 +146,7 @@
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/math/math.js', async: true },
             { src: 'plugin/notes/notes.js', async: true },
             { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]

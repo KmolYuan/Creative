@@ -23,7 +23,13 @@
 </v>
 <v t="ahshoe.20171106150105.1" a="E"><vh>原始機構</vh>
 <v t="ahshoe.20171106150127.1"><vh>Diagram</vh></v>
+<v t="ahshoe.20171106153326.1"><vh>Degree of Freedom</vh></v>
 <v t="ahshoe.20171106152114.1"><vh>Generalization</vh></v>
+</v>
+<v t="ahshoe.20171106154320.1" a="E"><vh>創新流程</vh>
+<v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Links</vh></v>
+<v t="ahshoe.20171106160223.1"><vh>Combinations</vh></v>
+<v t="ahshoe.20171106165420.1"><vh>Combinations code</vh></v>
 </v>
 </v>
 </v>
@@ -188,6 +194,7 @@ Author: kmol
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/math/math.js', async: true },
             { src: 'plugin/notes/notes.js', async: true },
             { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
@@ -221,6 +228,94 @@ Author: kmol
 &lt;h3&gt;Generalization&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/generalization.jpg"&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171106153326.1">&lt;section&gt;
+&lt;h3&gt;Degree of Freedom&lt;/h3&gt;
+&lt;script type="math/tex; mode=display"&gt;
+F=3(N_{L}-1)-2J_{R}-2J_{P}
+&lt;/script&gt;
+&lt;hr/&gt;
+&lt;script type="math/tex; mode=display"&gt;
+J_{R}=7
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+J_{P}=4
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+F=3(9-1)-2\times7-2\times4=+2
+&lt;/script&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171106154320.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171106154358.1">&lt;section&gt;
+&lt;h3&gt;The Maximum Joint Number of Links&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;script type="math/tex; mode=display"&gt;
+if(N_{L}\leq N_{J}\leq 2N_{L}-3)
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+m_{max}=N_{J}-N_{L}+2
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+N_{L}=9
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+N_{J}=11
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+m_{max}=11-9+2=4
+&lt;/script&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171106160223.1">&lt;section&gt;
+&lt;h3&gt;Combinations&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;script type="math/tex; mode=display"&gt;
+\sum_{m=2}^{m_{max}}N_{L_{m}}=9
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
+\sum_{m=2}^{m_{max}}mN_{L_{m}}=2\times11
+&lt;/script&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171106165420.1">&lt;section&gt;
+&lt;h3&gt;Calculation script&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;pre class="python"&gt;&lt;code style="max-height:500px;"&gt;from itertools import product
+
+class NumberSynthesis:
+    def __init__(self, NL, NJ):
+        self.NL = NL
+        self.NJ = NJ
+
+    @property
+    def Mmax(self):
+        if self.NL &lt;= self.NJ and self.NJ &lt;= (2*self.NL-3):
+            return self.NJ - self.NL + 2
+        elif (2*self.NL-3) &lt;= self.NJ and self.NJ &lt;= (self.NL*(self.NL-1)/2):
+            return self.NL - 1
+        else:
+            raise ValueError("incorrect number.")
+
+    @property
+    def NLm(self):
+        result = []
+        correction = lambda l: sum((i+2)*l[i] for i in range(len(l))) == 2*self.NJ
+        for symbols in product(range(self.NL+1), repeat=self.Mmax-2):
+            NLMmax = self.NL - sum(symbols)
+            answer = symbols+(NLMmax,)
+            if correction(answer) and NLMmax&gt;=0:
+                result.append(answer)
+        return tuple(result)
+
+if __name__=='__main__':
+    a = NumberSynthesis(9, 11)
+    print(a.NLm) #((5, 4, 0), (6, 2, 1), (7, 0, 2))
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/section&gt;
 </t>
 </tnodes>
