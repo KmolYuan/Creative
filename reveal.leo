@@ -22,7 +22,8 @@
 <v t="40323230.20171027160700.1"><vh>Cover</vh></v>
 </v>
 <v t="ahshoe.20171106150105.1" a="E"><vh>原始機構</vh>
-<v t="ahshoe.20171106150127.1"><vh>Diagram</vh></v>
+<v t="ahshoe.20171106150127.1"><vh>Origin Mechanism</vh></v>
+<v t="ahshoe.20171109155337.1"><vh>Diagram</vh></v>
 <v t="ahshoe.20171106153326.1"><vh>Degree of Freedom</vh></v>
 <v t="ahshoe.20171106152114.1"><vh>Generalization</vh></v>
 </v>
@@ -187,10 +188,11 @@ Author: kmol
 &lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/reveal.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    // More info about config &amp; dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
+        math: {
+		mathjax: 'plugin/MathJax/MathJax.js',
+		config: 'TeX-AMS_HTML-full'
+	},
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
@@ -219,9 +221,9 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106150127.1">&lt;section&gt;
-&lt;h3&gt;Diagram&lt;/h3&gt;
+&lt;h3&gt;Origin Mechanism&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;img src="img/diagram.jpg"&gt;
+&lt;img src="img/diagram_origin.png" width="80%"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106152114.1">&lt;section&gt;
@@ -316,6 +318,12 @@ if __name__=='__main__':
     a = NumberSynthesis(9, 11)
     print(a.NLm) #((5, 4, 0), (6, 2, 1), (7, 0, 2))
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171109155337.1">&lt;section&gt;
+&lt;h3&gt;Diagram&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/diagram.jpg"&gt;
 &lt;/section&gt;
 </t>
 </tnodes>

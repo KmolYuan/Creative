@@ -42,6 +42,11 @@
 
 <section>
 <section>
+<h3>Origin Mechanism</h3>
+<hr/>
+<img src="img/diagram_origin.png" width="80%">
+</section>
+<section>
 <h3>Diagram</h3>
 <hr/>
 <img src="img/diagram.jpg">
@@ -139,10 +144,11 @@ if __name__=='__main__':
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 <script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
+        math: {
+		mathjax: 'plugin/MathJax/MathJax.js',
+		config: 'TeX-AMS_HTML-full'
+	},
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
