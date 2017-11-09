@@ -30,7 +30,8 @@
 <v t="ahshoe.20171106154320.1" a="E"><vh>創新流程</vh>
 <v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Links</vh></v>
 <v t="ahshoe.20171106160223.1"><vh>Combinations</vh></v>
-<v t="ahshoe.20171106165420.1"><vh>Combinations script</vh></v>
+<v t="ahshoe.20171106165420.1"><vh>Combination script</vh></v>
+<v t="ahshoe.20171109232551.1"><vh>Combination result</vh></v>
 </v>
 </v>
 </v>
@@ -250,6 +251,9 @@ Author: kmol
 F=3(N_{L}-1)-2J_{R}-2J_{P}
 &lt;/script&gt;
 &lt;script type="math/tex; mode=display"&gt;
+N_{L}=9
+&lt;/script&gt;
+&lt;script type="math/tex; mode=display"&gt;
 J_{R}=7
 &lt;/script&gt;
 &lt;script type="math/tex; mode=display"&gt;
@@ -307,6 +311,14 @@ m_{max}=11-9+2=4
 &lt;h3&gt;Diagram&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/diagram.jpg"&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171109232551.1">&lt;section&gt;
+&lt;h3&gt;Combination result&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;p&gt;[5, 4, 0]&lt;/p&gt;
+&lt;p&gt;[6, 2, 1]&lt;/p&gt;
+&lt;p&gt;[7, 0, 2]&lt;/p&gt;
 &lt;/section&gt;
 </t>
 </tnodes>
