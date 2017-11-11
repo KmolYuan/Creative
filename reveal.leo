@@ -23,15 +23,16 @@
 </v>
 <v t="ahshoe.20171106150105.1" a="E"><vh>原始機構</vh>
 <v t="ahshoe.20171106150127.1"><vh>Origin Mechanism</vh></v>
-<v t="ahshoe.20171109155337.1"><vh>Diagram</vh></v>
 <v t="ahshoe.20171106153326.1"><vh>Degree of Freedom</vh></v>
 <v t="ahshoe.20171106152114.1"><vh>Generalization</vh></v>
 </v>
 <v t="ahshoe.20171106154320.1" a="E"><vh>創新流程</vh>
 <v t="ahshoe.20171106165420.1"><vh>Combination script</vh></v>
-<v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Links</vh></v>
+<v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Linkages</vh></v>
 <v t="ahshoe.20171106160223.1"><vh>Combinations</vh></v>
 <v t="ahshoe.20171109232551.1"><vh>Combination result</vh></v>
+<v t="ahshoe.20171111145133.1"><vh>Requirements</vh></v>
+<v t="ahshoe.20171111163427.1"><vh>Constraints</vh></v>
 </v>
 </v>
 </v>
@@ -263,19 +264,16 @@ F=3(9-1)-2\times7-2\times4=+2
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106154358.1">&lt;section&gt;
-&lt;h3&gt;The Maximum Joint Number of Links&lt;/h3&gt;
+&lt;h3&gt;The Maximum Joint Number of Linkages&lt;/h3&gt;
 &lt;hr/&gt;
+&lt;script type="math/tex; mode=display"&gt;
+N_{L}=9, N_{J}=11
+&lt;/script&gt;
 &lt;script type="math/tex; mode=display"&gt;
 if(N_{L}\leq N_{J}\leq 2N_{L}-3)
 &lt;/script&gt;
 &lt;script type="math/tex; mode=display"&gt;
 m_{max}=N_{J}-N_{L}+2
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-N_{L}=9
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-N_{J}=11
 &lt;/script&gt;
 &lt;script type="math/tex; mode=display"&gt;
 m_{max}=11-9+2=4
@@ -299,18 +297,45 @@ m_{max}=11-9+2=4
 &lt;img src="img/Program flow chart.png"&gt;
 &lt;/section&gt;
 </t>
-<t tx="ahshoe.20171109155337.1">&lt;section&gt;
-&lt;h3&gt;Diagram&lt;/h3&gt;
-&lt;hr/&gt;
-&lt;img src="img/diagram.jpg"&gt;
-&lt;/section&gt;
-</t>
 <t tx="ahshoe.20171109232551.1">&lt;section&gt;
 &lt;h3&gt;Combination result&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;p&gt;[5, 4, 0]&lt;/p&gt;
 &lt;p&gt;[6, 2, 1]&lt;/p&gt;
 &lt;p&gt;[7, 0, 2]&lt;/p&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171111145133.1">&lt;section&gt;
+&lt;h3&gt;Requirements&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
+N_{L_{ground}}=1
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
+N_{L_{output}}=1
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
+L_{ground}\neq L_{output}
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
+N_{J_{P}}=4
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
+N_{J_{input}}=2
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
+J_{input}\in J_{P}
+&lt;/script&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171111163427.1">&lt;section&gt;
+&lt;h3&gt;Constraints&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;ul&gt;
+&lt;li&gt;Ground and output linkage is not connected.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/section&gt;
 </t>
 </tnodes>

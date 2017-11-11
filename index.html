@@ -50,11 +50,6 @@
 <img src="img/diagram_origin.png" width="80%">
 </section>
 <section>
-<h3>Diagram</h3>
-<hr/>
-<img src="img/diagram.jpg">
-</section>
-<section>
 <h3>Degree of Freedom</h3>
 <hr/>
 <script type="math/tex; mode=display">
@@ -86,19 +81,16 @@ F=3(9-1)-2\times7-2\times4=+2
 <img src="img/Program flow chart.png">
 </section>
 <section>
-<h3>The Maximum Joint Number of Links</h3>
+<h3>The Maximum Joint Number of Linkages</h3>
 <hr/>
+<script type="math/tex; mode=display">
+N_{L}=9, N_{J}=11
+</script>
 <script type="math/tex; mode=display">
 if(N_{L}\leq N_{J}\leq 2N_{L}-3)
 </script>
 <script type="math/tex; mode=display">
 m_{max}=N_{J}-N_{L}+2
-</script>
-<script type="math/tex; mode=display">
-N_{L}=9
-</script>
-<script type="math/tex; mode=display">
-N_{J}=11
 </script>
 <script type="math/tex; mode=display">
 m_{max}=11-9+2=4
@@ -120,6 +112,37 @@ m_{max}=11-9+2=4
 <p>[5, 4, 0]</p>
 <p>[6, 2, 1]</p>
 <p>[7, 0, 2]</p>
+</section>
+<section>
+<h3>Requirements</h3>
+<hr/>
+<ul>
+<li><script type="math/tex; mode=display">
+N_{L_{ground}}=1
+</script></li>
+<li><script type="math/tex; mode=display">
+N_{L_{output}}=1
+</script></li>
+<li><script type="math/tex; mode=display">
+L_{ground}\neq L_{output}
+</script></li>
+<li><script type="math/tex; mode=display">
+N_{J_{P}}=4
+</script></li>
+<li><script type="math/tex; mode=display">
+N_{J_{input}}=2
+</script></li>
+<li><script type="math/tex; mode=display">
+J_{input}\in J_{P}
+</script></li>
+</ul>
+</section>
+<section>
+<h3>Constraints</h3>
+<hr/>
+<ul>
+<li>Ground and output linkage is not connected.</li>
+</ul>
 </section>
 </section>
 </div>
