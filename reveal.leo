@@ -196,7 +196,7 @@ Author: kmol
         history: true,
         transition: 'linear',
         math: {
-		mathjax: 'plugin/MathJax/MathJax.js',
+		//mathjax: 'plugin/MathJax/MathJax.js',
 		config: 'TeX-AMS_HTML-full'
 	   },
         dependencies: [
@@ -294,7 +294,6 @@ Author: kmol
 &lt;li&gt;\[ N_{L_{ground}}=1 \]&lt;/li&gt;
 &lt;li&gt;\[ N_{L_{output}}=1 \]&lt;/li&gt;
 &lt;li&gt;\[ L_{ground}\neq L_{output} \]&lt;/li&gt;
-&lt;li&gt;\[ N_{J_{P}}=4 \]&lt;/li&gt;
 &lt;li&gt;\[ N_{J_{input}}=2 \]&lt;/li&gt;
 &lt;li&gt;\[ J_{input}\in J_{P} \]&lt;/li&gt;
 &lt;/ul&gt;
