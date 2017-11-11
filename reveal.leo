@@ -194,10 +194,11 @@ Author: kmol
 &lt;script&gt;
     Reveal.initialize({
         history: true,
+        transition: 'linear',
         math: {
 		mathjax: 'plugin/MathJax/MathJax.js',
 		config: 'TeX-AMS_HTML-full'
-	},
+	   },
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },
@@ -243,21 +244,11 @@ Author: kmol
 <t tx="ahshoe.20171106153326.1">&lt;section&gt;
 &lt;h3&gt;Degree of Freedom&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;script type="math/tex; mode=display"&gt;
-F=3(N_{L}-1)-2J_{R}-2J_{P}
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-N_{L}=9
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-J_{R}=7
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-J_{P}=4
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-F=3(9-1)-2\times7-2\times4=+2
-&lt;/script&gt;
+\[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
+\[ N_{L}=9 \]
+\[ J_{R}=7 \]
+\[ J_{P}=4 \]
+\[ F=3(9-1)-2\times7-2\times4=+2 \]
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106154320.1">&lt;section&gt;
@@ -267,37 +258,27 @@ F=3(9-1)-2\times7-2\times4=+2
 <t tx="ahshoe.20171106154358.1">&lt;section&gt;
 &lt;h3&gt;The Maximum Joint Number of Linkages&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;script type="math/tex; mode=display"&gt;
-N_{L}=9, N_{J}=11
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-if(N_{L}\leq N_{J}\leq 2N_{L}-3)
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-m_{max}=N_{J}-N_{L}+2
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-m_{max}=11-9+2=4
-&lt;/script&gt;
+\[ N_{L}=9, N_{J}=11 \]
+\[ if(N_{L}\leq N_{J}\leq 2N_{L}-3) \]
+\[ m_{max}=N_{J}-N_{L}+2 \]
+\[ m_{max}=11-9+2=4 \]
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106160223.1">&lt;section&gt;
 &lt;h3&gt;Combinations&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;script type="math/tex; mode=display"&gt;
+\[
 \sum_{m=2}^{m_{max}}N_{L_{m}}=N_{L}, 
 \sum_{m=2}^{m_{max}}mN_{L_{m}}=2N_{J}
-&lt;/script&gt;
+\]
 &lt;br/&gt;
-&lt;script type="math/tex; mode=display"&gt;
-N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9
-&lt;/script&gt;
-&lt;script type="math/tex; mode=display"&gt;
-2N_{L_{2}}+3N_{L_{3}}+4N_{L_{4}}=22
-&lt;/script&gt;
+\[ N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9 \]
+\[ 2N_{L_{2}}+3N_{L_{3}}+4N_{L_{4}}=22 \]
+&lt;div class="fragment"&gt;
 &lt;p&gt;[5, 4, 0]&lt;/p&gt;
 &lt;p&gt;[6, 2, 1]&lt;/p&gt;
 &lt;p&gt;[7, 0, 2]&lt;/p&gt;
+&lt;/div&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106165420.1">&lt;section&gt;
@@ -310,24 +291,12 @@ N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9
 &lt;h3&gt;Requirements&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
-N_{L_{ground}}=1
-&lt;/script&gt;&lt;/li&gt;
-&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
-N_{L_{output}}=1
-&lt;/script&gt;&lt;/li&gt;
-&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
-L_{ground}\neq L_{output}
-&lt;/script&gt;&lt;/li&gt;
-&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
-N_{J_{P}}=4
-&lt;/script&gt;&lt;/li&gt;
-&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
-N_{J_{input}}=2
-&lt;/script&gt;&lt;/li&gt;
-&lt;li&gt;&lt;script type="math/tex; mode=display"&gt;
-J_{input}\in J_{P}
-&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;\[ N_{L_{ground}}=1 \]&lt;/li&gt;
+&lt;li&gt;\[ N_{L_{output}}=1 \]&lt;/li&gt;
+&lt;li&gt;\[ L_{ground}\neq L_{output} \]&lt;/li&gt;
+&lt;li&gt;\[ N_{J_{P}}=4 \]&lt;/li&gt;
+&lt;li&gt;\[ N_{J_{input}}=2 \]&lt;/li&gt;
+&lt;li&gt;\[ J_{input}\in J_{P} \]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
 </t>

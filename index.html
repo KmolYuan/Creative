@@ -52,21 +52,11 @@
 <section>
 <h3>Degree of Freedom</h3>
 <hr/>
-<script type="math/tex; mode=display">
-F=3(N_{L}-1)-2J_{R}-2J_{P}
-</script>
-<script type="math/tex; mode=display">
-N_{L}=9
-</script>
-<script type="math/tex; mode=display">
-J_{R}=7
-</script>
-<script type="math/tex; mode=display">
-J_{P}=4
-</script>
-<script type="math/tex; mode=display">
-F=3(9-1)-2\times7-2\times4=+2
-</script>
+\[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
+\[ N_{L}=9 \]
+\[ J_{R}=7 \]
+\[ J_{P}=4 \]
+\[ F=3(9-1)-2\times7-2\times4=+2 \]
 </section>
 <section>
 <h3>Generalization</h3>
@@ -83,59 +73,37 @@ F=3(9-1)-2\times7-2\times4=+2
 <section>
 <h3>The Maximum Joint Number of Linkages</h3>
 <hr/>
-<script type="math/tex; mode=display">
-N_{L}=9, N_{J}=11
-</script>
-<script type="math/tex; mode=display">
-if(N_{L}\leq N_{J}\leq 2N_{L}-3)
-</script>
-<script type="math/tex; mode=display">
-m_{max}=N_{J}-N_{L}+2
-</script>
-<script type="math/tex; mode=display">
-m_{max}=11-9+2=4
-</script>
+\[ N_{L}=9, N_{J}=11 \]
+\[ if(N_{L}\leq N_{J}\leq 2N_{L}-3) \]
+\[ m_{max}=N_{J}-N_{L}+2 \]
+\[ m_{max}=11-9+2=4 \]
 </section>
 <section>
 <h3>Combinations</h3>
 <hr/>
-<script type="math/tex; mode=display">
+\[
 \sum_{m=2}^{m_{max}}N_{L_{m}}=N_{L}, 
 \sum_{m=2}^{m_{max}}mN_{L_{m}}=2N_{J}
-</script>
+\]
 <br/>
-<script type="math/tex; mode=display">
-N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9
-</script>
-<script type="math/tex; mode=display">
-2N_{L_{2}}+3N_{L_{3}}+4N_{L_{4}}=22
-</script>
+\[ N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9 \]
+\[ 2N_{L_{2}}+3N_{L_{3}}+4N_{L_{4}}=22 \]
+<div class="fragment">
 <p>[5, 4, 0]</p>
 <p>[6, 2, 1]</p>
 <p>[7, 0, 2]</p>
+</div>
 </section>
 <section>
 <h3>Requirements</h3>
 <hr/>
 <ul>
-<li><script type="math/tex; mode=display">
-N_{L_{ground}}=1
-</script></li>
-<li><script type="math/tex; mode=display">
-N_{L_{output}}=1
-</script></li>
-<li><script type="math/tex; mode=display">
-L_{ground}\neq L_{output}
-</script></li>
-<li><script type="math/tex; mode=display">
-N_{J_{P}}=4
-</script></li>
-<li><script type="math/tex; mode=display">
-N_{J_{input}}=2
-</script></li>
-<li><script type="math/tex; mode=display">
-J_{input}\in J_{P}
-</script></li>
+<li>\[ N_{L_{ground}}=1 \]</li>
+<li>\[ N_{L_{output}}=1 \]</li>
+<li>\[ L_{ground}\neq L_{output} \]</li>
+<li>\[ N_{J_{P}}=4 \]</li>
+<li>\[ N_{J_{input}}=2 \]</li>
+<li>\[ J_{input}\in J_{P} \]</li>
 </ul>
 </section>
 <section>
@@ -165,10 +133,11 @@ J_{input}\in J_{P}
 <script>
     Reveal.initialize({
         history: true,
+        transition: 'linear',
         math: {
 		mathjax: 'plugin/MathJax/MathJax.js',
 		config: 'TeX-AMS_HTML-full'
-	},
+	   },
         dependencies: [
             { src: 'plugin/markdown/marked.js' },
             { src: 'plugin/markdown/markdown.js' },

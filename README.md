@@ -1,4 +1,3 @@
-# SCI1
-Implementation of an Open Source Planar Linkage Mechanism Simulation and Dimensional Synthesis System 
+# Creative
 
-+ https://kmolyuan.github.io/SCI1/
++ https://kmolyuan.github.io/Creative
