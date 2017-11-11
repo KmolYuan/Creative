@@ -100,15 +100,16 @@ m_{max}=11-9+2=4
 <h3>Combinations</h3>
 <hr/>
 <script type="math/tex; mode=display">
-\sum_{m=2}^{m_{max}}N_{L_{m}}=9
+\sum_{m=2}^{m_{max}}N_{L_{m}}=N_{L}, 
+\sum_{m=2}^{m_{max}}mN_{L_{m}}=2N_{J}
+</script>
+<br/>
+<script type="math/tex; mode=display">
+N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9
 </script>
 <script type="math/tex; mode=display">
-\sum_{m=2}^{m_{max}}mN_{L_{m}}=2\times11
+2N_{L_{2}}+3N_{L_{3}}+4N_{L_{4}}=22
 </script>
-</section>
-<section>
-<h3>Combination result</h3>
-<hr/>
 <p>[5, 4, 0]</p>
 <p>[6, 2, 1]</p>
 <p>[7, 0, 2]</p>
@@ -141,8 +142,19 @@ J_{input}\in J_{P}
 <h3>Constraints</h3>
 <hr/>
 <ul>
-<li>Ground and output linkage is not connected.</li>
+<li>Ground and output linkage are not connected.</li>
+<li>Number of joint of ground is same as output linkage.</li>
 </ul>
+</section>
+<section>
+<h3>Atlas</h3>
+<hr/>
+<img src="img/atlas.png">
+</section>
+<section>
+<h3>Target</h3>
+<hr/>
+<img src="img/target.png">
 </section>
 </section>
 </div>

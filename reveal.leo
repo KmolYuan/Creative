@@ -30,9 +30,10 @@
 <v t="ahshoe.20171106165420.1"><vh>Combination script</vh></v>
 <v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Linkages</vh></v>
 <v t="ahshoe.20171106160223.1"><vh>Combinations</vh></v>
-<v t="ahshoe.20171109232551.1"><vh>Combination result</vh></v>
 <v t="ahshoe.20171111145133.1"><vh>Requirements</vh></v>
 <v t="ahshoe.20171111163427.1"><vh>Constraints</vh></v>
+<v t="ahshoe.20171111170849.1"><vh>Atlas</vh></v>
+<v t="ahshoe.20171111173028.1"><vh>Target</vh></v>
 </v>
 </v>
 </v>
@@ -284,25 +285,25 @@ m_{max}=11-9+2=4
 &lt;h3&gt;Combinations&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;script type="math/tex; mode=display"&gt;
-\sum_{m=2}^{m_{max}}N_{L_{m}}=9
+\sum_{m=2}^{m_{max}}N_{L_{m}}=N_{L}, 
+\sum_{m=2}^{m_{max}}mN_{L_{m}}=2N_{J}
+&lt;/script&gt;
+&lt;br/&gt;
+&lt;script type="math/tex; mode=display"&gt;
+N_{L_{2}}+N_{L_{3}}+N_{L_{4}}=9
 &lt;/script&gt;
 &lt;script type="math/tex; mode=display"&gt;
-\sum_{m=2}^{m_{max}}mN_{L_{m}}=2\times11
+2N_{L_{2}}+3N_{L_{3}}+4N_{L_{4}}=22
 &lt;/script&gt;
+&lt;p&gt;[5, 4, 0]&lt;/p&gt;
+&lt;p&gt;[6, 2, 1]&lt;/p&gt;
+&lt;p&gt;[7, 0, 2]&lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106165420.1">&lt;section&gt;
 &lt;h3&gt;Calculation script&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/Program flow chart.png"&gt;
-&lt;/section&gt;
-</t>
-<t tx="ahshoe.20171109232551.1">&lt;section&gt;
-&lt;h3&gt;Combination result&lt;/h3&gt;
-&lt;hr/&gt;
-&lt;p&gt;[5, 4, 0]&lt;/p&gt;
-&lt;p&gt;[6, 2, 1]&lt;/p&gt;
-&lt;p&gt;[7, 0, 2]&lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171111145133.1">&lt;section&gt;
@@ -334,8 +335,21 @@ J_{input}\in J_{P}
 &lt;h3&gt;Constraints&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;ul&gt;
-&lt;li&gt;Ground and output linkage is not connected.&lt;/li&gt;
+&lt;li&gt;Ground and output linkage are not connected.&lt;/li&gt;
+&lt;li&gt;Number of joint of ground is same as output linkage.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171111170849.1">&lt;section&gt;
+&lt;h3&gt;Atlas&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/atlas.png"&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171111173028.1">&lt;section&gt;
+&lt;h3&gt;Target&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/target.png"&gt;
 &lt;/section&gt;
 </t>
 </tnodes>
