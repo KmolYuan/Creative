@@ -28,9 +28,9 @@
 <v t="ahshoe.20171106152114.1"><vh>Generalization</vh></v>
 </v>
 <v t="ahshoe.20171106154320.1" a="E"><vh>創新流程</vh>
+<v t="ahshoe.20171106165420.1"><vh>Combination script</vh></v>
 <v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Links</vh></v>
 <v t="ahshoe.20171106160223.1"><vh>Combinations</vh></v>
-<v t="ahshoe.20171106165420.1"><vh>Combination script</vh></v>
 <v t="ahshoe.20171109232551.1"><vh>Combination result</vh></v>
 </v>
 </v>
@@ -179,13 +179,6 @@ Author: kmol
   color : black;
   background-color : transparent;
 }
-
-#mxgraph_layout {
-  text-align: center;
-}
-#mxgraph {
-  display: inline-block;
-}
 &lt;/style&gt;
 
 &lt;div class="reveal"&gt;
@@ -198,6 +191,7 @@ Author: kmol
 &lt;script src="js/reveal.js"&gt;&lt;/script&gt;
 &lt;script&gt;
     Reveal.initialize({
+        history: true,
         math: {
 		mathjax: 'plugin/MathJax/MathJax.js',
 		config: 'TeX-AMS_HTML-full'
@@ -302,9 +296,7 @@ m_{max}=11-9+2=4
 <t tx="ahshoe.20171106165420.1">&lt;section&gt;
 &lt;h3&gt;Calculation script&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;div id="mxgraph_layout"&gt;
-&lt;div class="mxgraph" id="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&amp;quot;highlight&amp;quot;:&amp;quot;#0000ff&amp;quot;,&amp;quot;nav&amp;quot;:true,&amp;quot;resize&amp;quot;:true,&amp;quot;toolbar&amp;quot;:&amp;quot;zoom layers lightbox&amp;quot;,&amp;quot;edit&amp;quot;:&amp;quot;_blank&amp;quot;,&amp;quot;xml&amp;quot;:&amp;quot;&amp;lt;mxfile userAgent=\&amp;quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/7.4.3 Chrome/58.0.3029.110 Electron/1.7.5 Safari/537.36\&amp;quot; version=\&amp;quot;7.4.3\&amp;quot; editor=\&amp;quot;www.draw.io\&amp;quot; type=\&amp;quot;device\&amp;quot;&amp;gt;&amp;lt;diagram id=\&amp;quot;124de466-7556-529b-f173-e6ef67bc3483\&amp;quot; name=\&amp;quot;第1頁\&amp;quot;&amp;gt;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&amp;lt;/diagram&amp;gt;&amp;lt;/mxfile&amp;gt;&amp;quot;}"&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;img src="img/Program flow chart.png"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171109155337.1">&lt;section&gt;
