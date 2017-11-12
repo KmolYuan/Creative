@@ -35,6 +35,10 @@
 <v t="ahshoe.20171111170849.1"><vh>Atlas</vh></v>
 <v t="ahshoe.20171111173028.1"><vh>Target</vh></v>
 </v>
+<v t="40323230.20171112210551.1" a="E"><vh>具體化</vh>
+<v t="40323230.20171112210611.1"><vh>Particularization</vh></v>
+<v t="40323230.20171112211942.1"><vh>Dimensions</vh></v>
+</v>
 </v>
 </v>
 </vnodes>
@@ -223,6 +227,21 @@ Author: kmol
 &lt;h4&gt;Planar two degree of freedom parallel mechanism with coupling branch&lt;/h4&gt;
 &lt;br/&gt;
 &lt;h4&gt;設計四乙 張元&lt;/h4&gt;
+&lt;/section&gt;
+</t>
+<t tx="40323230.20171112210551.1">&lt;section&gt;
+@others
+&lt;/section&gt;</t>
+<t tx="40323230.20171112210611.1">&lt;section&gt;
+&lt;h3&gt;Particularization&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/target_3d.png"&gt;
+&lt;/section&gt;
+</t>
+<t tx="40323230.20171112211942.1">&lt;section&gt;
+&lt;h3&gt;Dimensions&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/target_2d.png"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106150105.1">&lt;section&gt;
