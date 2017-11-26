@@ -18,26 +18,21 @@
 <v t="40323230.20171027160226.1" a="E"><vh>@clean index.html</vh>
 <v t="40323230.20171027160338.1"><vh>head</vh></v>
 <v t="40323230.20171027160344.1" a="E"><vh>body</vh>
-<v t="40323230.20171027160523.1" a="E"><vh>Title</vh>
-<v t="40323230.20171027160700.1"><vh>Cover</vh></v>
+<v t="40323230.20171027160523.1" a="E"><vh>標題</vh>
+<v t="40323230.20171027160700.1"><vh>創意性機構設計實例報告</vh></v>
 </v>
-<v t="ahshoe.20171106150105.1" a="E"><vh>原始機構</vh>
-<v t="ahshoe.20171106150127.1"><vh>Origin Mechanism</vh></v>
-<v t="ahshoe.20171106153326.1"><vh>Degree of Freedom</vh></v>
-<v t="ahshoe.20171106152114.1"><vh>Generalization</vh></v>
+<v t="ahshoe.20171106150105.1" a="E"><vh>原始</vh>
+<v t="ahshoe.20171106150127.1"><vh>原始機構</vh></v>
+<v t="ahshoe.20171106153326.1"><vh>自由度</vh></v>
+<v t="ahshoe.20171106152114.1"><vh>一般化</vh></v>
 </v>
 <v t="ahshoe.20171106154320.1" a="E"><vh>創新流程</vh>
-<v t="ahshoe.20171106165420.1"><vh>Combination script</vh></v>
-<v t="ahshoe.20171106154358.1"><vh>The Maximum Joint Number of Linkages</vh></v>
-<v t="ahshoe.20171106160223.1"><vh>Combinations</vh></v>
-<v t="ahshoe.20171111145133.1"><vh>Requirements</vh></v>
-<v t="ahshoe.20171111163427.1"><vh>Constraints</vh></v>
-<v t="ahshoe.20171111170849.1"><vh>Atlas</vh></v>
-<v t="ahshoe.20171111173028.1"><vh>Target</vh></v>
-</v>
-<v t="40323230.20171112210551.1" a="E"><vh>具體化</vh>
-<v t="40323230.20171112210611.1"><vh>Particularization</vh></v>
-<v t="40323230.20171112211942.1"><vh>Dimensions</vh></v>
+<v t="ahshoe.20171106165420.1"><vh>計算程式</vh></v>
+<v t="ahshoe.20171106154358.1"><vh>單一連桿最大接頭數</vh></v>
+<v t="ahshoe.20171106160223.1"><vh>數目合成</vh></v>
+<v t="ahshoe.20171111145133.1"><vh>需求</vh></v>
+<v t="ahshoe.20171111163427.1"><vh>約束</vh></v>
+<v t="ahshoe.20171111170849.1"><vh>圖譜</vh></v>
 </v>
 </v>
 </v>
@@ -224,24 +219,8 @@ Author: kmol
 &lt;h3&gt;創意性機構設計實例報告&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;h4&gt;含耦合支鍊的平面兩自由度並聯機構&lt;/h4&gt;
-&lt;h4&gt;Planar two degree of freedom parallel mechanism with coupling branch&lt;/h4&gt;
 &lt;br/&gt;
 &lt;h4&gt;設計四乙 張元&lt;/h4&gt;
-&lt;/section&gt;
-</t>
-<t tx="40323230.20171112210551.1">&lt;section&gt;
-@others
-&lt;/section&gt;</t>
-<t tx="40323230.20171112210611.1">&lt;section&gt;
-&lt;h3&gt;Particularization&lt;/h3&gt;
-&lt;hr/&gt;
-&lt;img src="img/target_3d.png"&gt;
-&lt;/section&gt;
-</t>
-<t tx="40323230.20171112211942.1">&lt;section&gt;
-&lt;h3&gt;Dimensions&lt;/h3&gt;
-&lt;hr/&gt;
-&lt;img src="img/target_2d.png"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106150105.1">&lt;section&gt;
@@ -249,19 +228,19 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106150127.1">&lt;section&gt;
-&lt;h3&gt;Origin Mechanism&lt;/h3&gt;
+&lt;h3&gt;原始機構&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/diagram_origin.png" width="80%"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106152114.1">&lt;section&gt;
-&lt;h3&gt;Generalization&lt;/h3&gt;
+&lt;h3&gt;一般化&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;img src="img/generalization.jpg"&gt;
+&lt;img src="img/generalization.png"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106153326.1">&lt;section&gt;
-&lt;h3&gt;Degree of Freedom&lt;/h3&gt;
+&lt;h3&gt;自由度&lt;/h3&gt;
 &lt;hr/&gt;
 \[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
 \[ N_{L}=9 \]
@@ -275,7 +254,7 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106154358.1">&lt;section&gt;
-&lt;h3&gt;The Maximum Joint Number of Linkages&lt;/h3&gt;
+&lt;h3&gt;單一連桿最大接頭數&lt;/h3&gt;
 &lt;hr/&gt;
 \[ N_{L}=9, N_{J}=11 \]
 \[ if(N_{L}\leq N_{J}\leq 2N_{L}-3) \]
@@ -284,7 +263,7 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106160223.1">&lt;section&gt;
-&lt;h3&gt;Combinations&lt;/h3&gt;
+&lt;h3&gt;數目合成&lt;/h3&gt;
 &lt;hr/&gt;
 \[
 \sum_{m=2}^{m_{max}}N_{L_{m}}=N_{L}, 
@@ -301,13 +280,13 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106165420.1">&lt;section&gt;
-&lt;h3&gt;Calculation script&lt;/h3&gt;
+&lt;h3&gt;計算程式&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/Program flow chart.png"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171111145133.1">&lt;section&gt;
-&lt;h3&gt;Requirements&lt;/h3&gt;
+&lt;h3&gt;需求&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;ul&gt;
 &lt;li&gt;\[ N_{L_{ground}}=1 \]&lt;/li&gt;
@@ -319,24 +298,18 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171111163427.1">&lt;section&gt;
-&lt;h3&gt;Constraints&lt;/h3&gt;
+&lt;h3&gt;約束&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;ul&gt;
-&lt;li&gt;Ground and output linkage are not connected.&lt;/li&gt;
-&lt;li&gt;Number of joint of ground is same as output linkage.&lt;/li&gt;
+&lt;li&gt;固定桿與輸出桿互不相連。&lt;/li&gt;
+&lt;li&gt;固定桿與輸出桿的接頭數相同。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171111170849.1">&lt;section&gt;
-&lt;h3&gt;Atlas&lt;/h3&gt;
+&lt;h3&gt;圖譜&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/atlas.png"&gt;
-&lt;/section&gt;
-</t>
-<t tx="ahshoe.20171111173028.1">&lt;section&gt;
-&lt;h3&gt;Target&lt;/h3&gt;
-&lt;hr/&gt;
-&lt;img src="img/target.png"&gt;
 &lt;/section&gt;
 </t>
 </tnodes>

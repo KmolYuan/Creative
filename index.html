@@ -37,7 +37,6 @@
 <h3>創意性機構設計實例報告</h3>
 <hr/>
 <h4>含耦合支鍊的平面兩自由度並聯機構</h4>
-<h4>Planar two degree of freedom parallel mechanism with coupling branch</h4>
 <br/>
 <h4>設計四乙 張元</h4>
 </section>
@@ -45,12 +44,12 @@
 
 <section>
 <section>
-<h3>Origin Mechanism</h3>
+<h3>原始機構</h3>
 <hr/>
 <img src="img/diagram_origin.png" width="80%">
 </section>
 <section>
-<h3>Degree of Freedom</h3>
+<h3>自由度</h3>
 <hr/>
 \[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
 \[ N_{L}=9 \]
@@ -59,19 +58,19 @@
 \[ F=3(9-1)-2\times7-2\times4=+2 \]
 </section>
 <section>
-<h3>Generalization</h3>
+<h3>一般化</h3>
 <hr/>
-<img src="img/generalization.jpg">
+<img src="img/generalization.png">
 </section>
 </section>
 <section>
 <section>
-<h3>Calculation script</h3>
+<h3>計算程式</h3>
 <hr/>
 <img src="img/Program flow chart.png">
 </section>
 <section>
-<h3>The Maximum Joint Number of Linkages</h3>
+<h3>單一連桿最大接頭數</h3>
 <hr/>
 \[ N_{L}=9, N_{J}=11 \]
 \[ if(N_{L}\leq N_{J}\leq 2N_{L}-3) \]
@@ -79,7 +78,7 @@
 \[ m_{max}=11-9+2=4 \]
 </section>
 <section>
-<h3>Combinations</h3>
+<h3>數目合成</h3>
 <hr/>
 \[
 \sum_{m=2}^{m_{max}}N_{L_{m}}=N_{L}, 
@@ -95,7 +94,7 @@
 </div>
 </section>
 <section>
-<h3>Requirements</h3>
+<h3>需求</h3>
 <hr/>
 <ul>
 <li>\[ N_{L_{ground}}=1 \]</li>
@@ -106,37 +105,19 @@
 </ul>
 </section>
 <section>
-<h3>Constraints</h3>
+<h3>約束</h3>
 <hr/>
 <ul>
-<li>Ground and output linkage are not connected.</li>
-<li>Number of joint of ground is same as output linkage.</li>
+<li>固定桿與輸出桿互不相連。</li>
+<li>固定桿與輸出桿的接頭數相同。</li>
 </ul>
 </section>
 <section>
-<h3>Atlas</h3>
+<h3>圖譜</h3>
 <hr/>
 <img src="img/atlas.png">
 </section>
-<section>
-<h3>Target</h3>
-<hr/>
-<img src="img/target.png">
 </section>
-</section>
-<section>
-<section>
-<h3>Particularization</h3>
-<hr/>
-<img src="img/target_3d.png">
-</section>
-<section>
-<h3>Dimensions</h3>
-<hr/>
-<img src="img/target_2d.png">
-</section>
-</section>
-
 </div>
 </div>
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
