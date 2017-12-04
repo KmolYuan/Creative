@@ -44,23 +44,25 @@
 
 <section>
 <section>
+<div style="width:48%;float:left;">
 <h3>原始機構</h3>
 <hr/>
 <img src="img/diagram_origin.png" width="80%">
-</section>
-<section>
+</div>
+<div style="width:48%;float:right;">
 <h3>自由度</h3>
 <hr/>
 \[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
 \[ N_{L}=9 \]
 \[ J_{R}=7 \]
 \[ J_{P}=4 \]
-\[ F=3(9-1)-2\times7-2\times4=+2 \]
+\[ F=+2 \]
+</div>
 </section>
 <section>
 <h3>一般化</h3>
 <hr/>
-<img src="img/generalization.png">
+<img src="img/generalization.png" width="50%">
 </section>
 </section>
 <section>
@@ -120,7 +122,6 @@
 </section>
 </div>
 </div>
-<script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 <script>
@@ -128,7 +129,7 @@
         history: true,
         transition: 'linear',
         math: {
-		//mathjax: 'plugin/MathJax/MathJax.js',
+		mathjax: 'plugin/MathJax/MathJax.js',
 		config: 'TeX-AMS_HTML-full'
 	   },
         dependencies: [

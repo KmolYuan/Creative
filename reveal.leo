@@ -22,8 +22,7 @@
 <v t="40323230.20171027160700.1"><vh>創意性機構設計實例報告</vh></v>
 </v>
 <v t="ahshoe.20171106150105.1" a="E"><vh>原始</vh>
-<v t="ahshoe.20171106150127.1"><vh>原始機構</vh></v>
-<v t="ahshoe.20171106153326.1"><vh>自由度</vh></v>
+<v t="ahshoe.20171106150127.1"><vh>原始機構 + 自由度</vh></v>
 <v t="ahshoe.20171106152114.1"><vh>一般化</vh></v>
 </v>
 <v t="ahshoe.20171106154320.1" a="E"><vh>創新流程</vh>
@@ -187,7 +186,6 @@ Author: kmol
 @others
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"&gt;&lt;/script&gt;
 &lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
 &lt;script src="js/reveal.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -195,7 +193,7 @@ Author: kmol
         history: true,
         transition: 'linear',
         math: {
-		//mathjax: 'plugin/MathJax/MathJax.js',
+		mathjax: 'plugin/MathJax/MathJax.js',
 		config: 'TeX-AMS_HTML-full'
 	   },
         dependencies: [
@@ -228,25 +226,26 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106150127.1">&lt;section&gt;
+&lt;div style="width:48%;float:left;"&gt;
 &lt;h3&gt;原始機構&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/diagram_origin.png" width="80%"&gt;
-&lt;/section&gt;
-</t>
-<t tx="ahshoe.20171106152114.1">&lt;section&gt;
-&lt;h3&gt;一般化&lt;/h3&gt;
-&lt;hr/&gt;
-&lt;img src="img/generalization.png"&gt;
-&lt;/section&gt;
-</t>
-<t tx="ahshoe.20171106153326.1">&lt;section&gt;
+&lt;/div&gt;
+&lt;div style="width:48%;float:right;"&gt;
 &lt;h3&gt;自由度&lt;/h3&gt;
 &lt;hr/&gt;
 \[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
 \[ N_{L}=9 \]
 \[ J_{R}=7 \]
 \[ J_{P}=4 \]
-\[ F=3(9-1)-2\times7-2\times4=+2 \]
+\[ F=+2 \]
+&lt;/div&gt;
+&lt;/section&gt;
+</t>
+<t tx="ahshoe.20171106152114.1">&lt;section&gt;
+&lt;h3&gt;一般化&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/generalization.png" width="50%"&gt;
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106154320.1">&lt;section&gt;
