@@ -31,7 +31,10 @@
 <v t="ahshoe.20171106160223.1"><vh>數目合成</vh></v>
 <v t="ahshoe.20171111145133.1"><vh>需求</vh></v>
 <v t="ahshoe.20171111163427.1"><vh>約束</vh></v>
-<v t="ahshoe.20171111170849.1"><vh>圖譜</vh></v>
+<v t="40323230.20180107140609.1"><vh>圖譜 - 手繪</vh></v>
+<v t="ahshoe.20171111170849.1"><vh>圖譜 - 程式繪製</vh></v>
+<v t="40323230.20180107143745.1"><vh>具體化</vh></v>
+<v t="40323230.20180107143917.1"><vh>概念圖</vh></v>
 </v>
 </v>
 </v>
@@ -221,17 +224,35 @@ Author: kmol
 &lt;h4&gt;設計四乙 張元&lt;/h4&gt;
 &lt;/section&gt;
 </t>
+<t tx="40323230.20180107140609.1">&lt;section&gt;
+&lt;h3&gt;圖譜 - 手繪&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/Atlas_handmade.png"&gt;
+&lt;/section&gt;
+</t>
+<t tx="40323230.20180107143745.1">&lt;section&gt;
+&lt;h3&gt;具體化&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/target.png"&gt;
+&lt;/section&gt;
+</t>
+<t tx="40323230.20180107143917.1">&lt;section&gt;
+&lt;h3&gt;概念圖&lt;/h3&gt;
+&lt;hr/&gt;
+&lt;img src="img/target_3d.png"&gt;
+&lt;/section&gt;
+</t>
 <t tx="ahshoe.20171106150105.1">&lt;section&gt;
 @others
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171106150127.1">&lt;section&gt;
-&lt;div style="width:48%;float:left;"&gt;
+&lt;div style="width:50%;float:left;"&gt;
 &lt;h3&gt;原始機構&lt;/h3&gt;
 &lt;hr/&gt;
 &lt;img src="img/diagram_origin.png" width="80%"&gt;
 &lt;/div&gt;
-&lt;div style="width:48%;float:right;"&gt;
+&lt;div style="width:46%;float:right;"&gt;
 &lt;h3&gt;自由度&lt;/h3&gt;
 &lt;hr/&gt;
 \[ F=3(N_{L}-1)-2J_{R}-2J_{P} \]
@@ -306,9 +327,10 @@ Author: kmol
 &lt;/section&gt;
 </t>
 <t tx="ahshoe.20171111170849.1">&lt;section&gt;
-&lt;h3&gt;圖譜&lt;/h3&gt;
+&lt;h3&gt;圖譜 - 程式繪製&lt;/h3&gt;
 &lt;hr/&gt;
-&lt;img src="img/atlas.png"&gt;
+&lt;img src="img/Atlas.png" width="30%"&gt;
+&lt;img src="img/Atlas_node.png" width="30%"&gt;
 &lt;/section&gt;
 </t>
 </tnodes>
